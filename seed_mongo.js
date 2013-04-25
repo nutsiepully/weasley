@@ -148,7 +148,7 @@ function get_edd (reg_date) {
 }
 
 function get_anc_visit_date (reg_date, edd) {
-    return reg_date + days(randomInInterval(0, daysBetween(edd - reg_date)));
+    return reg_date + days(randomInInterval(0, daysBetween(reg_date, edd)));
 }
 
 function get_name () {
